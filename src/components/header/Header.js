@@ -3,11 +3,13 @@ import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
+
 import {
   greeting,
   workExperiences,
   skillsSection,
   openSource,
+  aboutSection,
   blogSection,
   talkSection,
   achievementSection,
@@ -23,6 +25,7 @@ function Header() {
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
   const viewResume = resumeSection.display;
+  const viewAbout = aboutSection.display;
 
   return (
     <Headroom>
@@ -74,6 +77,11 @@ function Header() {
           {viewResume && (
             <li>
               <a href="#resume">Resume</a>
+            </li>
+          )}
+          {viewAbout && (
+            <li>
+              <a href="#about">About</a>
             </li>
           )}
           <li>

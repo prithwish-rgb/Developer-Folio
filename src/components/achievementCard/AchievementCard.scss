@@ -4,6 +4,8 @@
   max-width: 100%;
   height: auto;
   width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .card-title {
   color: $titleColor;
@@ -21,7 +23,7 @@
   background-color: $lightBackground2;
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   padding: 1.5rem;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 1px solid $lightBorder1;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -43,6 +45,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 .achievement-cards-div {
   display: grid;
