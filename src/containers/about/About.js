@@ -1,7 +1,6 @@
 import React, {useContext} from "react";
 import "./About.scss";
 import {Fade} from "react-reveal";
-import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
 import {aboutSection} from "../../portfolio";
 
