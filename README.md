@@ -1,6 +1,6 @@
-# Software Developer Folio ⚡️ [![GitHub](https://img.shields.io/github/license/saadpasta/developer-portfolio?color=blue)](https://github.com/saadpasta/developerFolio/blob/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/saadpasta/developerFolio)](https://github.com/saadpasta/developerFolio/stargazers)  [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
+# Prithwish Karmakar - Full Stack Developer Portfolio ⚡️
 
-## A clean, beautiful and responsive portfolio template for Developers!
+## Passionate Full Stack Developer crafting digital experiences with creativity and precision
 
 
 <p align="center">
@@ -10,11 +10,16 @@
 </p>
 
 
-Just change `src/portfolio.js` to get your personal portfolio. Customize portfolio theme by using your own color scheme globally in the  `src/_globalColor.scss` file. Feel free to use it as-is or personalize it as much as you want.
+This is my personal portfolio showcasing my skills, projects, and professional journey as a Full Stack Developer. Built with React.js and featuring a modern, responsive design with dark/light mode support.
 
-If you'd like to **contribute** and make this much better for other users, have a look at [Issues](https://github.com/saadpasta/developerFolio/issues).
-
-Created something awesome for your fork of the portfolio and want to share it? Feel free to open a [pull request](https://github.com/saadpasta/developerFolio/pulls).
+## 🚀 Features
+- **Modern Design**: Clean and professional interface
+- **Responsive Layout**: Works perfectly on all devices
+- **Dark/Light Mode**: Toggle between themes
+- **Custom About Section**: Personal information with profile picture
+- **Curved Certificate Cards**: Beautiful achievement showcase
+- **SEO Optimized**: Better search engine visibility
+- **Fast Loading**: Optimized build for performance
 
 ## Table of Contents
 - [Sections](#sections)
@@ -30,21 +35,17 @@ Created something awesome for your fork of the portfolio and want to share it? F
 - [Contributors](#project-maintainers)
 
 ## Portfolio Sections
-✔️ Summary and About me\
-✔️ Skills\
-✔️ Education\
-✔️ Work Experience\
-✔️ Open Source Projects Connected with GitHub\
-✔️ Big Projects\
-✔️ Achievements And Certifications 🏆\
-✔️ Blogs\
-✔️ Talks\
-✔️ Podcast\
-✔️ Contact me\
-✔️ Twitter Timeline\
-✔️ GitHub Profile
+✔️ **Greeting & Introduction** - Personal welcome with animated elements\
+✔️ **About Me** - Detailed personal and professional information with profile picture\
+✔️ **Skills & Tech Stack** - Technical expertise and software skills\
+✔️ **Education** - Academic background and qualifications\
+✔️ **Projects & Startup Projects** - Showcase of development work\
+✔️ **Achievements & Certifications** 🏆 - Professional certifications with curved card design\
+✔️ **Contact Information** - Get in touch details\
+✔️ **Dark/Light Mode Toggle** 🌓 - Theme switching capability\
+✔️ **Responsive Design** 📱 - Mobile-friendly across all devices
 
-To view a live example, **[click here](https://developerfolio.js.org/)**.
+**Live Portfolio**: [prithwish-portfolio.vercel.app](https://prithwish-portfolio.vercel.app/)
 
 
 ## Getting Started
