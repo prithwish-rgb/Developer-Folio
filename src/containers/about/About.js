@@ -54,13 +54,19 @@ export default function About() {
               <div className="about-info-grid">
                 {aboutSection.personalInfo && (
                   <div className="personal-info">
-                    <h3 className={isDark ? "dark-mode info-title" : "info-title"}>
+                    <h3
+                      className={isDark ? "dark-mode info-title" : "info-title"}
+                    >
                       Personal Info
                     </h3>
                     {aboutSection.personalInfo.map((info, i) => (
                       <div key={i} className="info-item">
                         <span className="info-label">{info.label}:</span>
-                        <span className={isDark ? "dark-mode info-value" : "info-value"}>
+                        <span
+                          className={
+                            isDark ? "dark-mode info-value" : "info-value"
+                          }
+                        >
                           {info.value}
                         </span>
                       </div>

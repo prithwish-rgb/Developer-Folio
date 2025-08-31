@@ -24,10 +24,8 @@ const greeting = {
   title: "Hi all, I'm Prithwish",
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-   )
-  ,
-  resumeLink:
-    "/Prithwish_Karmakar_FullStack_Developer_Resume.pdf", // Set to empty to hide the button
+  ),
+  resumeLink: "/Prithwish_Karmakar_FullStack_Developer_Resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -125,7 +123,8 @@ https://fontawesome.com/icons?d=gallery */
 
 const aboutSection = {
   title: emoji("About Me 👨‍💻"),
-  subtitle: "Passionate developer crafting digital experiences with creativity and precision",
+  subtitle:
+    "Passionate developer crafting digital experiences with creativity and precision",
   paragraphs: [
     "I'm a dedicated Full Stack Developer who believes in the power of clean code and innovative solutions. My approach combines technical expertise with creative problem-solving to build applications that not only function flawlessly but also provide exceptional user experiences.",
     "Beyond coding, I'm driven by continuous learning and staying ahead of technology trends. I enjoy tackling complex challenges, optimizing performance, and creating scalable architectures that stand the test of time.",
@@ -170,9 +169,8 @@ const educationInfo = {
       schoolName: "The Heritage Academy",
       logo: require("./assets/images/thalogo.jpg"),
       subHeader: "Bachelor of Computer Applications",
-      duration: "September 2022 - June 2025",
-      
-    },
+      duration: "September 2022 - June 2025"
+    }
     // {
     //   schoolName: "Stanford University",
     //   logo: require("./assets/images/stanfordLogo.png"),
@@ -263,7 +261,7 @@ const bigProjects = {
         }
         //  you can add extra buttons here.
       ]
-    },
+    }
     // {
     //   image: require("./assets/images/nextuLogo.webp"),
     //   projectName: "Nextu",
@@ -288,7 +286,6 @@ const achievementSection = {
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
-    
     {
       title: "The Complete 2024 Web Development Bootcamp",
       // subtitle:
@@ -314,9 +311,7 @@ const achievementSection = {
           url: "https://certificate.ardentsoftware.co.in/generate/115201"
         }
       ]
-    },
-
-   
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
