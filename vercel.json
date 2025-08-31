@@ -21,6 +21,11 @@
     {"src": "/safari-pinned-tab.svg", "dest": "/safari-pinned-tab.svg"},
     {"src": "/browserconfig.xml", "dest": "/browserconfig.xml"},
     {"src": "/mstile-150x150.png", "dest": "/mstile-150x150.png"},
+    {
+      "src": "/Prithwish_Karmakar_FullStack_Developer_Resume\\.pdf",
+      "dest": "/Prithwish_Karmakar_FullStack_Developer_Resume.pdf"
+    },
+    {"src": "/(.*)\\.pdf", "dest": "/$1.pdf"},
     {"src": "/robots.txt", "dest": "/robots.txt"},
     {"src": "/(.*)", "dest": "/index.html"}
   ],
