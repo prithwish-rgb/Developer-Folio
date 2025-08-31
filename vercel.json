@@ -14,7 +14,13 @@
     {"src": "/asset-manifest.json", "dest": "/asset-manifest.json"},
     {"src": "/manifest.json", "dest": "/manifest.json"},
     {"src": "/favicon.ico", "dest": "/favicon.ico"},
+    {"src": "/favicon-(.*)\\.png", "dest": "/favicon-$1.png"},
+    {"src": "/apple-touch-icon.png", "dest": "/apple-touch-icon.png"},
+    {"src": "/android-chrome-(.*)\\.png", "dest": "/android-chrome-$1.png"},
     {"src": "/logo(.*)", "dest": "/logo$1"},
+    {"src": "/safari-pinned-tab.svg", "dest": "/safari-pinned-tab.svg"},
+    {"src": "/browserconfig.xml", "dest": "/browserconfig.xml"},
+    {"src": "/mstile-150x150.png", "dest": "/mstile-150x150.png"},
     {"src": "/robots.txt", "dest": "/robots.txt"},
     {"src": "/(.*)", "dest": "/index.html"}
   ],
