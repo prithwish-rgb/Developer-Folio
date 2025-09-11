@@ -265,7 +265,8 @@ const bigProjects = {
     {
       image: require("./assets/images/Screenshot (56).png"),
       projectName: "AI Resume & Job Tracker",
-      projectDesc: "AI-powered tool to track resumes and manage job applications.",
+      projectDesc:
+        "AI-powered tool to track resumes and manage job applications.",
       footerLink: [
         {
           name: "Visit Website",
