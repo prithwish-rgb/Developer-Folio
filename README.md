@@ -2,7 +2,7 @@
 
 ## Passionate Full Stack Developer crafting digital experiences with creativity and precision
 
-This is my personal portfolio showcasing my skills, projects, and professional journey as a Full Stack Developer. Built with React.js and featuring a modern, responsive design with dark/light mode support.
+cThis is my personal portfolio showcasing my skills, projects, and professional journey as a Full Stack Developer. Built with React.js and featuring a modern, responsive design with dark/light mode support.
 
 ## 🚀 Features
 - **Modern Design**: Clean and professional interface

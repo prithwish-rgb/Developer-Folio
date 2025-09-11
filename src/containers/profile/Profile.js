@@ -14,16 +14,23 @@ export default function Profile() {
   }
 
   useEffect(() => {
-    if (openSource.showGithubProfile === "true") {
+    // Only attempt to fetch when the section is enabled and profile display is desired
+    if (openSource.display && openSource.showGithubProfile === "true") {
       const getProfileData = () => {
         fetch("/profile.json")
           .then(result => {
-            if (result.ok) {
-              return result.json();
+            if (!result.ok) {
+              throw new Error("profile.json not found or not accessible");
             }
+            return result.json();
           })
           .then(response => {
-            setProfileFunction(response.data.user);
+            // Defensive: ensure shape exists
+            if (response && response.data && response.data.user) {
+              setProfileFunction(response.data.user);
+            } else {
+              throw new Error("Invalid profile.json shape");
+            }
           })
           .catch(function (error) {
             console.error(

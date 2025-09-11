@@ -261,6 +261,18 @@ const bigProjects = {
         }
         //  you can add extra buttons here.
       ]
+    },
+    {
+      image: require("./assets/images/Screenshot (56).png"),
+      projectName: "AI Resume & Job Tracker",
+      projectDesc: "AI-powered tool to track resumes and manage job applications.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://ai-resume-tracker-lake.vercel.app/"
+        }
+        //  you can add extra buttons here.
+      ]
     }
     // {
     //   image: require("./assets/images/nextuLogo.webp"),
