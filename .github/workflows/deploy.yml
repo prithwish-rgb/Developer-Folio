@@ -31,7 +31,23 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          npm ci
+          # Show versions for debugging
+          node -v
+          npm -v
+
+          # Try a clean install first, fall back to npm install if needed
+          npm ci --prefer-offline --no-audit || npm install --prefer-offline --no-audit
+
+          # Debug: List installed packages
+          echo "Installed packages:"
+          npm list --depth=0
+
+          # Debug: Check if react-scripts is available
+          echo "Checking for react-scripts:"
+          npx which react-scripts || echo "react-scripts not found in PATH"
+          ls -la node_modules/.bin/ || true
+
+          # Run the build
           npm run build
 
       - name: Deploy 🚀
