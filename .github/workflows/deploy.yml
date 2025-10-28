@@ -54,7 +54,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          repository-name: ${{ github.repository_owner }}/Developer-Folio
+          repository-name: prithwish-rgb/Developer-folio
           branch: gh-pages
           folder: build
           clean: true
