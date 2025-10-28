@@ -1,10 +1,18 @@
 name: Build and Deploy
+
+# Required permissions for GitHub Pages deployment
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 env:
   CI: false
   GITHUB_USERNAME: ${{ github.repository_owner }}
   REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   USE_GITHUB_DATA: "true"
   MEDIUM_USERNAME: "saadpasta"
+
 on:
   workflow_dispatch:
   push:
@@ -17,11 +25,13 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
+      - name: Checkout repository 🛎️
+        uses: actions/checkout@v4
         with:
-          persist-credentials: false
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Setup Node.js 🔧
         uses: actions/setup-node@v4
@@ -29,32 +39,34 @@ jobs:
           node-version: '20.x'
           cache: 'npm'
 
-      - name: Install and Build 🔧
+      - name: Install dependencies 📦
         run: |
           # Show versions for debugging
           node -v
           npm -v
-
-          # Try a clean install first, fall back to npm install if needed
+          
+          # Clean install with fallback to regular install
           npm ci --prefer-offline --no-audit || npm install --prefer-offline --no-audit
-
-          # Debug: List installed packages
+          
+          # Verify installation
           echo "Installed packages:"
           npm list --depth=0
-
-          # Debug: Check if react-scripts is available
+          
           echo "Checking for react-scripts:"
           npx which react-scripts || echo "react-scripts not found in PATH"
-          ls -la node_modules/.bin/ || true
 
-          # Run the build
+      - name: Build project 🏗️
+        run: |
           npm run build
+          
+          # Verify build output
+          ls -la build/
 
-      - name: Deploy 🚀
+      - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          repository-name: prithwish-rgb/Developer-folio
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository-name: prithwish-rgb/Developer-Folio
           branch: gh-pages
           folder: build
           clean: true
